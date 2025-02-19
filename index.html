@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predial</title>
+</head>
+<style>
+
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+    }
+
+    .mainDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .recibo {
+        width: 445px;
+        height: 635px;
+        padding: 15px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .f1, .f2, .f3, .f4, .f5{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 7px;
+    }
+
+    .f5{
+        border: solid 1px #1c1c1c;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        margin-bottom: 10px;
+    }
+
+    .titulo {
+        font-size: 7px;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f3{
+        border: solid 1px #1c1c1c;
+    }
+
+
+</style>
+<body>
+    <div class="mainDiv">
+
+        <div class="recibo">
+            <div class="f1">
+                <img src="assets/logo.png" width="auto" height="40px" alt="">
+                <div class="titulo">
+                    <p>CIUDAD MADERO TAMAULIPAS</p>
+                    <p>TESORERÍA MUNICIPAL</p>
+                </div>
+                <img src="assets/constesp.png" width="auto" height="25px" alt="">
+            </div>
+            <div class="f2">
+                <p><span style="font-weight: 800;">FOLIO CAJA :</span> 00000000014852</p>  
+                <p style="margin-bottom: 15px;">RECIBO DE PAGO PREDIAL</p> 
+                <p><span style="font-weight: 800;">FOLIO :</span> P0000022501-1</p>
+            </div>
+            <div class="f3">
+                <p style="margin: 5px; margin-top: 15px;"><span style="font-weight: 800;">PROPIETARIO :</span> ROBERTO YAEL MONTERRUBIO ELORZA</p>
+            </div>
+            <div class="f4">
+                <p style="margin-top: 2px; margin-bottom: 15px;"><span style="font-weight: 800;">UBICACION :</span> CALLE CASTOR BLANCO NO. EXT. 112 FRACCIONAMIENTO LOS CASTORES C.P. 89515 CIUDAD MADERO</p>
+            </div>
+            <div class="f5">
+                <p style="margin: 5px; margin-bottom: 0px; font-weight: 800; white-space: pre;">CLAVE CATASTRAL :      TERRENO :                    CONSTRUCCIÓN :                                         VALOR CATASTRAL :</span></p>
+                <p style="white-space: pre;">           190115434020               144.33M2                              156.66M2                                                                                          $914.633.10</p>
+                <p style="white-space: pre; margin-left: 5px;"><span style="font-weight: 800;">PERIODO PAGADO:</span> 1/2024 AL 6/2024 AL 6/2024</p>
+            </div>
+            <div class="f5">
+                <div style="padding: 5px; border-right: solid 1px #000; margin-right: solid 1px #000;">
+                    <p style="font-weight: 800;">CORRIENTE</p>
+                    <p style="white-space: pre;">Impuesto:         $1,128.54</p>
+                    <p style="white-space: pre;">Recargos                 $0.00</p>
+                    <p style="white-space: pre; margin-bottom: 40px;">Diferencia                $0.00</p>
+                </div>    
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
