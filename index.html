@@ -26,6 +26,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         height: 100vh;
         width: 100vw;
     }
@@ -38,7 +39,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     
-    .f1, .f2, .f3, .f4, .f5{
+    .f1, .f2, .f3, .f4, .f5, .f6, .f7, .f8{
         width: 100%;
         height: fit-content;
         display: flex;
@@ -53,6 +54,21 @@
         align-items: start;
         justify-content: start;
         margin-bottom: 10px;
+    }
+
+    .f6{
+        border: solid 1px #1c1c1c;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        height: 80px;
+    }
+
+    .f7{
+        justify-content: end;
+        align-items: end;
+        flex-direction: column;
+        white-space: pre;
     }
 
     .titulo {
@@ -83,7 +99,7 @@
                 <img src="assets/constesp.png" width="auto" height="25px" alt="">
             </div>
             <div class="f2">
-                <p><span style="font-weight: 800;">FOLIO CAJA :</span> 00000000014aHOLAAAAsda852</p>  
+                <p><span style="font-weight: 800;">FOLIO CAJA :</span> 00000000014852</p>  
                 <p style="margin-bottom: 15px;">RECIBO DE PAGO PREDIAL</p> 
                 <p><span style="font-weight: 800;">FOLIO :</span> P0000022501-1</p>
             </div>
@@ -98,15 +114,63 @@
                 <p style="white-space: pre;">           190115434020               144.33M2                              156.66M2                                                                                          $914.633.10</p>
                 <p style="white-space: pre; margin-left: 5px;"><span style="font-weight: 800;">PERIODO PAGADO:</span> 1/2024 AL 6/2024 AL 6/2024</p>
             </div>
-            <div class="f5">
-                <div style="padding: 5px; border-right: solid 1px #000; margin-right: solid 1px #000;">
+            <div class="f6">
+                <div style="padding: 5px; border-right: solid 1px #000; padding-right: 15px; height: 70px;">
                     <p style="font-weight: 800;">CORRIENTE</p>
                     <p style="white-space: pre;">Impuesto:         $1,128.54</p>
                     <p style="white-space: pre;">Recargos                 $0.00</p>
-                    <p style="white-space: pre; margin-bottom: 40px;">Diferencia                $0.00</p>
+                    <p style="white-space: pre;">Diferencia                $0.00</p>
+                </div>    
+
+                <div style="padding: 5px; padding-left: 15px; border-right: solid 1px #000; height: 70px;">
+                    <p style="font-weight: 800;">REZAGO</p>
+                    <p style="white-space: pre;">Impuesto:                                                     $1,129</p>
+                    <p style="white-space: pre;">Actualización:                                                 $0.00</p>
+                    <p style="white-space: pre;">Recargos:                                                       $0.00</p>
+                    <p style="white-space: pre;">Multa:                                                              $0.00</p>
+                    <p style="white-space: pre;">Honorarios:                                                     $0.00</p>
+                    <p style="white-space: pre;">Ejecución:                                                       $0.00</p>
+                    <p style="white-space: pre;">Número Credito:                                             $0.00</p>
+                </div>    
+
+                <div style="padding: 5px; padding-left: 15px;">
+                    <p style="font-weight: 800;">SUBSIDIO</p>
+                    <p style="white-space: pre;">Subsidio:                                              $1,129</p>
+                    <p style="white-space: pre;">Recargos:                                               $0.00</p>
+                    <p style="white-space: pre;">Cobranza:                                               $0.00</p>
+                    <p style="white-space: pre;">Ejecución:                                               $0.00</p>
+                    <p style="white-space: pre;">Rezago:                                                  $0.00</p>
                 </div>    
             </div>
+
+            <div class="f7">
+                <div style="width: 180px; height: 70px; border-bottom: solid 1px black; white-space: pre;">
+                    <span style="font-weight: 800;">SUB-TOTAL</span>
+                    Corriente:                                              $1,129
+                    Rezago:                                                   $0.00
+                    <span style="font-weight: 800;">TOTAL:</span>                                              $959.00
+                </div>
+                FIRMA DEL CAJERO                           
+            </div>
+
+            <div class="f8" style="text-align: center; display: flex; justify-content: center; align-items: center;">
+                EI articulo 109 y 115 fracc . II del Código Municipal vigente para eI Estado de Tamaulipas establece que la cuota
+                del Impuesto <br> Predial es anual, pero su importe se dividirá en seis partes iguales que se pagaran en los
+                primeros quince días de los meses de <br> Enero , Marzo , Mayo , Julio Septiembre y Noviembre de cada año. EI
+                incumplimiento en el pago del impuesto predial generara <br> recargos moratorios.
+            </div>
+
+            <img src="assets/qrrecibo.png" width="100%" height="auto" alt="">
+
+            <div class="f8" style="text-align: start; display: flex; justify-content: center; align-items: center; font-family: 'Times New Roman', Times, serif; font-weight: 800; font-size: 10px;">
+                EI comprobante solo es valido salvo buen cobro. Automáticamente este comprobante queda sin <br>
+                validez en caso de ser rechazado por el Banco o una transacción generada por el cliente o el <br>
+                tarjetahabiente cuando no reconoce el cargo.
+            </div>
+
         </div>
+
+        <a href="predial.jpg">Click Aquí para abrir el archivo original</a>
 
     </div>
 </body>
